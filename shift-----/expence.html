@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="exp.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+   
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">💼</div>
+                <h2>Expense Tracker</h2>
+            </div>
+
+            <nav>
+                <a href="expanse.html" id="add-expense">⊕ Add Expense</a>
+                <a href="all.html">☷ All Expenses</a>
+                <a href="setting.html">⚙ Settings</a>
+            </nav>
+
+        </aside>
+
+
+     
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Here's an overview of your spending</p>
+                </div>
+
+                <button class="profile">D</button>
+            </header>
+
+
+           
+            <section class="cards">
+
+                <div class="card">
+                    <p>Total Spent</p>
+                    <h2 id="total-spent">Rs. 0</h2>
+                </div>
+
+                <div class="card">
+                    <p>Total Expenses</p>
+                    <h2 id="total-expenses">0</h2>
+                </div>
+
+                <div class="card">
+                    <p>This Month</p>
+                    <h2 id="month-spent">Rs. 0</h2>
+                </div>
+
+                <div class="card">
+                    <p>Highest Expense</p>
+                    <h2 id="highest-expense">Rs. 0</h2>
+                </div>
+
+            </section>
+
+
+         
+            <section class="expense-form">
+
+                <h3>Add Expense</h3>
+
+                <input
+                    type="text"
+                    id="expense-title"
+                    placeholder="Expense name"
+                >
+
+                <input
+                    type="number"
+                    id="expense-amount"
+                    placeholder="Amount"
+                >
+
+                <select id="expense-category">
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Education">Education</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <input
+                    type="text"
+                    id="expense-description"
+                    placeholder="Description"
+                >
+
+                <button id="add-button">Add Expense</button>
+
+            </section>
+
+
+            <section class="expense-panel">
+
+                <h3>Expenses</h3>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="expense-list">
+                    </tbody>
+                    
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="ex.js"></script>
+
+</body>
+
+</html>
